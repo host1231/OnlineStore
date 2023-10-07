@@ -1,0 +1,127 @@
+.product{
+    width: 300px;
+    height: 400px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    border: 1px solid var(--color-gray);
+    padding: 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, .3);
+    transition: transform .5s ease-in-out;
+}
+
+.product:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, .5);
+}
+
+.product-image{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 190px;
+}
+
+.image-switch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    text-align: center;
+    display: flex; 
+}
+
+.image-switch__item{
+    flex-grow: 1;
+}
+
+.image-switch__img{
+    position: absolute; 
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: -1;
+}
+
+.image-switch__img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.image-switch__item:first-child .image-switch__img{
+    opacity: 1;
+    z-index: -1;
+}
+
+.image-switch__item:hover .image-switch__img{
+    opacity: 1;
+    z-index: -1;
+}
+
+.image-pagination{
+    z-index: 30;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-pagination__item{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    margin: 0 3px;
+}
+
+.image-pagination__item.image-pagination__item--active{
+    background-color: var(--color-accent);
+}
+
+
+.product__title{
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0 15px;
+}
+
+.product-price{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.product-price__old{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-decoration: line-through;
+    color: var(--color-gray);
+    margin-left: 20px;;
+}
+
+.product__btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__btn img{
+    margin-right: 5px;
+}
+
+
+
+

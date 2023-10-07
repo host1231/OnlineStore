@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/card-page.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <img class="preloader__img" src="images/logo.svg" alt="">
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="images/logo.svg" alt="Logo">
+                </a>
+                <nav class="header__nav nav">
+                    <button class="nav__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Акции</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__card card">
+                    <div class="card__text">
+                        Корзина
+                        <svg width="20" height="18" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 0.703125C0 0.313477 0.313477 0 0.703125 0H2.03613C2.68066 0 3.25195 0.375 3.51855 0.9375H15.5596C16.3301 0.9375 16.8926 1.66992 16.6904 2.41406L15.4893 6.87598C15.2402 7.7959 14.4053 8.4375 13.4531 8.4375H5.00098L5.15918 9.27246C5.22363 9.60352 5.51367 9.84375 5.85059 9.84375H14.2969C14.6865 9.84375 15 10.1572 15 10.5469C15 10.9365 14.6865 11.25 14.2969 11.25H5.85059C4.83691 11.25 3.9668 10.5293 3.7793 9.53613L2.26758 1.59668C2.24707 1.48535 2.15039 1.40625 2.03613 1.40625H0.703125C0.313477 1.40625 0 1.09277 0 0.703125ZM3.75 13.5938C3.75 13.4091 3.78637 13.2262 3.85704 13.0556C3.92772 12.885 4.0313 12.73 4.16188 12.5994C4.29246 12.4688 4.44749 12.3652 4.6181 12.2945C4.78872 12.2239 4.97158 12.1875 5.15625 12.1875C5.34092 12.1875 5.52378 12.2239 5.6944 12.2945C5.86501 12.3652 6.02004 12.4688 6.15062 12.5994C6.2812 12.73 6.38479 12.885 6.45546 13.0556C6.52613 13.2262 6.5625 13.4091 6.5625 13.5938C6.5625 13.7784 6.52613 13.9613 6.45546 14.1319C6.38479 14.3025 6.2812 14.4575 6.15062 14.5881C6.02004 14.7187 5.86501 14.8223 5.6944 14.893C5.52378 14.9636 5.34092 15 5.15625 15C4.97158 15 4.78872 14.9636 4.6181 14.893C4.44749 14.8223 4.29246 14.7187 4.16188 14.5881C4.0313 14.4575 3.92772 14.3025 3.85704 14.1319C3.78637 13.9613 3.75 13.7784 3.75 13.5938ZM13.5938 12.1875C13.9667 12.1875 14.3244 12.3357 14.5881 12.5994C14.8518 12.8631 15 13.2208 15 13.5938C15 13.9667 14.8518 14.3244 14.5881 14.5881C14.3244 14.8518 13.9667 15 13.5938 15C13.2208 15 12.8631 14.8518 12.5994 14.5881C12.3357 14.3244 12.1875 13.9667 12.1875 13.5938C12.1875 13.2208 12.3357 12.8631 12.5994 12.5994C12.8631 12.3357 13.2208 12.1875 13.5938 12.1875Z"
+                                fill="#FEFEFE" />
+                        </svg>
+                        <span class="card__quantity">0</span>
+                    </div>
+                    <div class="card__content card-content">
+                        <h3 class="card-content__title">Корзина</h3>
+                        <button class="card-content__close-btn">
+                            <img src="images/xmark.svg" alt="Xmark">
+                        </button>
+                        <ul class="card-content__list">
+                            <!-- <li class="card-content__item">
+                                <article class="card-content__product card-product">
+                                    <img class="card-product__img" src="images/iphone14-1.jpg" alt="">
+                                    <h3 class="card-product__title">Smartfon Apple iPhone 14 Pro 128GB NFC Deep Purple</h3>
+                                    <span class="card-product__price">2849.99 ₼</span>
+                                    <div class="card-product__counter card-counter">
+                                        <button class="card-counter__btn-minus">-</button>
+                                        <div class="">1</div>
+                                        <button class="cacard-counter__quantityrd-counter__btn-plus">+</button>
+                                    </div>
+                                    <button class="card-product__trash-btn">
+                                        <img src="images/trash-solid.svg" alt="Trash">
+                                    </button>
+                                </article>
+                            </li> -->
+                        </ul>
+                        <p class="card-content__text">В вашей корзине нет товаров!</p>
+                        <div class="card-content__bottom card-bottom">
+                            <div class="card-bottom__price">
+                                Итого:
+                                <span class="card-bottom__fullprice">0 ₼</span>
+                            </div>
+                            <button class="card-bottom__btn btn">Оформи заказ</button>
+                        </div>
+                    </div>
+                    <form class="card__order card-order">
+                        <button class="card-order__close-btn">
+                            <img src="images/xmark.svg" alt="Xmark">
+                        </button>
+                        <h3 class="card-order__title">Оформление заказа</h3>
+                        <div class="card-order__content order-content">
+                            <ul class="order-content__list">
+                                <!-- <li class="order-content__item">
+                                    <article class="order-content__product order-product">
+                                        <img class="order-product__img" src="images/xiaomi1.jpg" alt="Xiaomi">
+                                        <h3 class="order-product__title">Smartfon Xiaomi Poco X5 Pro 6GB/128GB Blue</h3>
+                                        <span class="order-product__quantity">Количество: 2 шт</span>
+                                        <span class="order-product__price">500 ₼</span>
+                                    </article>
+                                </li> -->
+                            </ul>
+                            <div class="order-content__total order-total">
+                                <p class="order-total__quantity">Товаров в заказе: 3 шт</p>
+                                <p class="order-total__price">Общая сумма заказа: 5 000 ₼</p>
+                            </div>
+                        </div>
+                        <div class="card-order__form order-form">
+                            <div class="order-form__inputs">
+                                <input class="order-form__input" name="name" type="text" placeholder="Ваше имя" required>
+                                <input class="order-form__input" name="tel" type="text" placeholder="Телефон" required>
+                                <input class="order-form__input" name="email" type="text" placeholder="Email" required>
+                            </div>
+                            <button type="submit" class="order-form__btn btn">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-view">
+        <div class="container">
+            <div class="product-view__inner">
+                <!-- <div class="product-view__slider product-slider">
+                    <div class="product-slider__nav slider-nav">
+                        <div class="slider-nav__item">
+                            <img src="images/xiaomi1.jpg" alt="Xiaomi">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img src="images/xiaomi2.jpg" alt="Xiaomi">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img src="images/xiaomi3.jpg" alt="Xiaomi">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img src="images/xiaomi4.jpg" alt="Xiaomi">
+                        </div>
+                        <div class="slider-nav__item">
+                            <img src="images/xiaomi5.jpg" alt="Xiaomi">
+                        </div>
+                    </div>
+                    <div class="product-slider__block slider-block">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/xiaomi1.jpg" alt="Xiaomi">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/xiaomi2.jpg" alt="Xiaomi">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/xiaomi3.jpg" alt="Xiaomi">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/xiaomi4.jpg" alt="Xiaomi">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/xiaomi5.jpg" alt="Xiaomi">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-view__info product-info">
+                    <h1 class="product-info__title">Smartfon Xiaomi Poco X5 Pro 6GB/128GB Blue</h1>
+                    <p class="product-info__text">Официальная гарантия. Возврат и обмен - согласно статье 15 Закона
+                        Азербайджанской Республики "О защите прав потребителей".</p>
+                    <div class="product-info__content info-content">
+                        <div class="info-content__price info-price">
+                            <span class="info-price__old">899.99 ₼</span>
+                            <span class="info-price__current">859.99 ₼</span>
+                        </div>
+                        <button class="info-content__product-btn product__btn btn">
+                            <img src="images/basket-btn.svg" alt="">
+                            Добавить в корзину
+                        </button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/order.js"></script>
+    <script src="js/card-page.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
